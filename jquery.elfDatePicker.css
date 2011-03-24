@@ -1,0 +1,154 @@
+@CHARSET "UTF-8";
+
+.f_l {
+	float: left;
+	_display: inline;
+}
+
+.f_r {
+	float: right;
+	_display: inline;
+}
+
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	_line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+.elfDatePicker {
+	float:left;/*为了产生包裹效果*/
+	border: 1px solid #d2d2d2;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 2px 2px 3px #eee;
+	-moz-box-shadow: 2px 2px 3px #eee;
+	-webkit-box-shadow: 2px 2px 3px #eee;
+	padding: 0.2em;
+	background: #fcfcfc;
+	background: -moz-linear-gradient(top, #fcfcfc, #fff);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#fff) );
+	position: absolute;
+}
+
+.elfDatePicker * {
+	color: #333;
+}
+
+.elfDatePicker a {
+	text-decoration: none;
+}
+
+.elfDatePickerTitle,.elfDatePickerBottom {
+	display: block;
+}
+
+.elfDatePickerCalendar{
+	border-collapse: separate;
+    border-spacing: 0.1em;
+}
+.elfDatePickerTitle,.elfDatePickerBottom,.elfDatePickerCalendar td {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: #f9f9f9;
+	background: -moz-linear-gradient(top, #f9f9f9, #f1f1f1);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f1f1f1) );
+	border: 1px solid #e6e6e6;
+}
+
+.elfDatePickerMonthWarp,.elfDatePickerYearWarp {
+	font-weight: 600;
+	text-align: center;
+	margin: 3px;
+}
+
+.elfDatePickerMonth,.elfDatePickerYear {
+	padding: 0 0.3em;
+	height: 1em;
+	line-height: 1em;
+}
+
+.elfDatePickerTitlePrevMonth,.elfDatePickerTitleNextMonth,.elfDatePickerTitlePrevYear,.elfDatePickerTitleNextYear {
+	display: block;
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+}
+
+.elfDatePickerTitlePrevMonth,.elfDatePickerTitleNextMonth,.elfDatePickerTitlePrevYear,.elfDatePickerTitleNextYear,.elfDatePickerCalendar td.elfDatePickerCelToday,.elfDatePickerTodayBtn,.elfDatePickerClearBtn
+	{
+	border: 1px solid #adb9c2;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: #eee;
+	background: -moz-linear-gradient(top, #eee, #d2d2d2);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#d2d2d2) );
+}
+
+.elfDatePickerCalendar th {
+	font-weight: normal;
+}
+
+.elfDatePickerCalendar {
+	width: 100%;
+}
+
+.elfDatePickerCalendar td {
+	cursor: pointer;
+	width: 1.3em;
+	height: 1em;
+	line-height: 1em;
+	margin: 0.3em;
+	text-align: right;
+	padding: 0.2em;
+}
+
+.elfDatePickerCalendar td.elfDatePickerCelDeactive {
+	background: #fff;
+	background: -moz-linear-gradient(top, #fff, #f3f3f3);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff),to(#f3f3f3) );
+	border: 1px solid #f1f1f1;
+	color: #aaa;
+}
+
+.elfDatePickerTitlePrevMonth:hover,.elfDatePickerTitleNextMonth:hover,.elfDatePickerTitlePrevYear:hover,.elfDatePickerTitleNextYear:hover,.elfDatePickerCalendar td.elfDatePickerCelHover,.elfDatePickerCalendar td.elfDatePickerCelChecked,.elfDatePickerTodayBtn:hover,.elfDatePickerClearBtn:hover{
+	background: #FDF595;
+	background: -moz-linear-gradient(top, #FDF595, #FBDE4B);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FDF595), to(#FBDE4B) );
+	border: 1px solid #fdc367;
+	color: #D0260F;
+}
+
+.elfDatePickerCalendar td.elfDatePickerCelDisabled,.disabledTodayBtn{
+	cursor: default;
+	background: #fff;
+	background: -moz-linear-gradient(top, #fff, #f3f3f3);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff),to(#f3f3f3) );
+	border: 1px solid #f1f1f1;
+	color: #f3f3f3;
+}
+
+.elfDatePickerBottom {
+	margin-top: 3px;
+}
+
+.elfDatePickerTodayBtn,.elfDatePickerClearBtn {
+	padding: 2px 5px;
+	margin: 3px;
+	height: 1em;
+	line-height: 1em;
+}
