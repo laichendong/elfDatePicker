@@ -282,11 +282,8 @@
 				}
 				squares.push(square);
 			});
-			if(pointInSquares(point, squares)){
-				return true;
-			}else{
+			if(!pointInSquares(point, squares)){
 				$(".elfDatePicker").hide(200);
-				return false;
 			}
 		}	
 		$("body").unbind("click",hideAll).bind("click",hideAll);
